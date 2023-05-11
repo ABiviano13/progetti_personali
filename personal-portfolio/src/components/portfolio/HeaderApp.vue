@@ -3,6 +3,25 @@
 export default {
     data() {
         return {
+            routes_links : [
+                {
+                    link: 'Home',
+                    name_route: 'home'
+                },
+                {
+                    link: 'Chi sono',
+                    name_route: 'who_i_am'
+                },
+                {
+                    link: 'I miei progetti',
+                    name_route: 'projects'
+                },
+                {
+                    link: 'Contatti',
+                    name_route: 'contacts'
+                }
+                
+            ]
             
         }
     }
@@ -25,28 +44,15 @@ export default {
                 </router-link>
 
                 <ul class="list_links">
-                    <li class="list_item_link">
 
-                        <router-link :to="{ name: 'home' }">
-                            Home
+                    <li class="list_item_link" v-for="link in routes_links">
+
+                        <router-link :to="{ name: link.name_route }">
+                            {{link.link}}
                         </router-link>
                         
                     </li>
-                    <li class="list_item_link">
-                        <router-link :to="{ name: 'who_i_am' }">
-                            Chi sono
-                        </router-link>
-                    </li>
-                    <li class="list_item_link">
-                        <router-link :to="{ name: 'projects' }">
-                            I miei progetti
-                        </router-link>
-                    </li>
-                    <li class="list_item_link">
-                        <router-link :to="{ name: 'contacts' }">
-                            Contacts
-                        </router-link>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
