@@ -16,25 +16,36 @@ export default {
 
         <div class="container">
             <div class="navbar">
-                <h1 class="title_nav">
-                    Il mio portfolio
-                </h1>
+                <router-link :to="{ name: 'home' }">
+
+                    <h1 class="title_nav">
+                        Il mio portfolio
+                    </h1>
+
+                </router-link>
 
                 <ul class="list_links">
                     <li class="list_item_link">
-                        <a href="#">
+
+                        <router-link :to="{ name: 'home' }">
+                            Home
+                        </router-link>
+                        
+                    </li>
+                    <li class="list_item_link">
+                        <router-link :to="{ name: 'who_i_am' }">
                             Chi sono
-                        </a>
+                        </router-link>
                     </li>
                     <li class="list_item_link">
-                        <a href="#">
+                        <router-link :to="{ name: 'projects' }">
                             I miei progetti
-                        </a>
+                        </router-link>
                     </li>
                     <li class="list_item_link">
-                        <a href="#">
-                            Github
-                        </a>
+                        <router-link :to="{ name: 'contacts' }">
+                            Contacts
+                        </router-link>
                     </li>
                 </ul>
             </div>

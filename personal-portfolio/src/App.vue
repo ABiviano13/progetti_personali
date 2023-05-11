@@ -1,15 +1,9 @@
 <script>
 
-import Header from './components/portfolio/HeaderApp.vue'
-import Main from './components/portfolio/MainApp.vue'
-import Footer from './components/portfolio/FooterApp.vue'
-
 
 export default {
   components: {
-    Header,
-    Main,
-    Footer,
+
   }
 }
 
@@ -17,9 +11,7 @@ export default {
 
 <template>
 
-  <Header></Header>
-  <Main></Main>
-  <Footer></Footer>
+  <router-view></router-view>
 
 </template>
 
