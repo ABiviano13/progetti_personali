@@ -61,11 +61,11 @@ export default {
 
 </template>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+@use '../../scss/partials/variables.scss' as *;
 .main-header{
     border-bottom: 1px solid;
-    color: rgb(77, 144, 188);;
+    color: $heavenly;
     .navbar{
         display: flex;
         justify-content: space-around;
