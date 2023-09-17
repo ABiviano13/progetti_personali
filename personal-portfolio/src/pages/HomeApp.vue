@@ -1,5 +1,5 @@
 <script>
-import LayoutDefault from '../layouts/layoutDefault.vue'
+import LayoutDefault from '../layouts/LayoutDefault.vue'
 
 export default {
     name: 'HomeApp',
@@ -27,9 +27,9 @@ export default {
     <LayoutDefault>
 
         <div class="container advent_click">
-            <div class="box" v-for="image in images">
+            <!-- <div class="box" v-for="image in images">
                 <img :src="image" alt="">
-            </div>
+            </div> -->
         </div>
 
     </LayoutDefault>

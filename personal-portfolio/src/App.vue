@@ -2,9 +2,7 @@
 
 
 export default {
-  components: {
 
-  }
 }
 
 </script>
@@ -16,6 +14,5 @@ export default {
 </template>
 
 <style lang="scss">
-
 
 </style>

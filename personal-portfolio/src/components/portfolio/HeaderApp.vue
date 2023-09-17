@@ -9,11 +9,7 @@ export default {
                     name_route: 'home'
                 },
                 {
-                    link: 'Chi sono',
-                    name_route: 'who_i_am'
-                },
-                {
-                    link: 'I miei progetti',
+                    link: 'Progetti',
                     name_route: 'projects'
                 },
                 {
@@ -38,7 +34,7 @@ export default {
                 <router-link :to="{ name: 'home' }">
 
                     <h1 class="title_nav">
-                        Il mio portfolio
+                        Anita
                     </h1>
 
                 </router-link>
@@ -65,15 +61,19 @@ export default {
 @use '../../scss/partials/variables.scss' as *;
 .main-header{
     border-bottom: 1px solid;
-    color: $heavenly;
+    color: white;
     .navbar{
         display: flex;
         justify-content: space-around;
         align-items: center;
 
+        .title_nav{
+            font-family: 'Major Mono Display', monospace;
+        }
+
         .list_links{
             display: flex;
-            gap: 10px;
+            gap: 20px;
         }
     }
 }
