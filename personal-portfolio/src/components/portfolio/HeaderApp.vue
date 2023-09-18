@@ -61,7 +61,7 @@ export default {
 @use '../../scss/partials/variables.scss' as *;
 .main-header{
     border-bottom: 1px solid;
-    color: white;
+    border-color: rgb(226, 220, 220);
     .navbar{
         display: flex;
         justify-content: space-around;

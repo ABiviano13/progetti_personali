@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 //importare i componenti per registrarli nelle varie routes
 import HomeApp from './pages/HomeApp.vue'
-import WhoIAmApp from './pages/WhoIAmApp.vue'
+import TechnologiesApp from './pages/Technologies.vue'
 import ProjectsApp from './pages/ProjectsApp.vue'
 import ContactsApp from './pages/ContactsApp.vue'
 
@@ -16,9 +16,9 @@ const router = createRouter({
             component: HomeApp
         },
         {
-            path: '/who_i_am',
-            name: 'who_i_am',
-            component: WhoIAmApp
+            path: '/tecnologies',
+            name: 'tecnologies',
+            component: TechnologiesApp
         },
         {
             path: '/projects',

@@ -1,5 +1,5 @@
 <script>
-import LayoutDefault from '../layouts/layoutDefault.vue'
+import LayoutDefault from '../layouts/LayoutDefault.vue'
 
 export default {
     name: 'HomeApp',
@@ -14,7 +14,7 @@ export default {
 
     <LayoutDefault>
 
-        Sono "Chi sono"
+        Sono "Tecnologie"
 
     </LayoutDefault>
 
